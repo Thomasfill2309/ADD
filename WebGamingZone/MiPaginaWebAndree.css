@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Videojuegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .productos, .notas, .reseñas-container, .videos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .producto, .nota, article {
+            background: #fff;
+            margin: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .producto img, .nota img, article img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer form input, footer form textarea {
+            width: 80%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        footer form button {
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .social-media a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Tienda de Videojuegos</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#notas">Notas</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Bienvenido a la Mejor Tienda de Videojuegos</h2>
+    <p>Encuentra los últimos lanzamientos y las mejores ofertas.</p>
+</section>
+
+<div class="container">
+    <section id="productos">
+        <h2>Artículos en Venta</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="https://via.placeholder.com/150" alt="The Legend of Zelda: Breath of the Wild">
+                <h3>The Legend of Zelda: Breath of the Wild</h3>
+                <p>Explora el vasto mundo de Hyrule en esta aventura épica.</p>
+                <p>Precio: $59.99</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="https://via.placeholder.com/150" alt="Cyberpunk 2077">
+                <h3>Cyberpunk 2077</h3>
+                <p>Sumérgete en el futuro distópico de Night City.</p>
+                <p>Precio: $49.99</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="https://via.placeholder.com/150" alt="Elden Ring">
+                <h3>Elden Ring</h3>
+                <p>Un mundo abierto lleno de desafíos y misterios.</p>
+                <p>Precio: $69.99</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="notas">
+        <h2>Notas Interesantes</h2>
+        <div class="notas">
+            <div class="nota">
+                <img src="https://via.placeholder.com/150" alt="Historia de los Videojuegos">
+                <h3>Historia de los Videojuegos</h3>
+                <p>Los videojuegos han evolucionado desde simples píxeles hasta gráficos hiperrealistas. Conoce más sobre su historia.</p>
+            </div>
+            <div class="nota">
+                <img src="https://via.placeholder.com/150" alt="Impacto de los Videojuegos">
+                <h3>Impacto de los Videojuegos en la Sociedad</h3>
+                <p>Los videojuegos no solo son entretenimiento, también tienen un impacto significativo en la cultura y la educación.</p>
+            </div>
+            <div class="nota">
+                <img src="https://via.placeholder.com/150" alt="Videojuegos más Vendidos">
+                <h3>Los Videojuegos más Vendidos de Todos los Tiempos</h3>
+                <p>Descubre cuáles son los videojuegos que han marcado récords de ventas a nivel mundial.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reseñas">
+        <h2>Reseñas</h2>
+        <div class="reseñas-container">
+            <article>
+                <img src="https://via.placeholder.com/150" alt="Reseña 1">
+                <h3>Reseña: The Last of Us Part II</h3>
+                <p>Una experiencia emocionalmente intensa y visualmente impresionante.</p>
+            </article>
+            <article>
+                <img src="https://via.placeholder.com/150" alt="Reseña 2">
+                <h3>Reseña: Animal Crossing: New Horizons</h3>
+                <p>Un juego relajante y perfecto para desconectar.</p>
+            </article>
+            <article>
+                <img src="https://via.placeholder.com/150" alt="Reseña 3">
+                <h3>Reseña: Hades</h3>
+                <p>Un roguelike adictivo con una narrativa fascinante.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="videos">
+        <h2>Videos</h2>
+        <div class="videos-container">
+            <article>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                <h3>Top 10 Juegos de 2023</h3>
+            </article>
+            <article>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                <h3>Análisis de Cyberpunk 2077</h3>
+            </article>
+            <article>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                <h3>Guía de Elden Ring</h3>
+            </article>
+        </div>
+    </section>
+</div>
+
+<footer id="contacto">
+    <h2>Contacto</h2>
+    <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo Electrónico" required>
+        <textarea placeholder="Mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    <div class="social-media">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+    </div>
+</footer>
+
+</body>
+</html>
